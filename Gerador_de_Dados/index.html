@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolador de Dados de RPG</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>🎲 Rolador de Dados de RPG</h1>
+  </header>
+
+  <main>
+    <!-- Painel lateral: escolher quantos e quais dados -->
+    <aside id="painel">
+      <h2>Escolha os dados</h2>
+      <div id="controles"></div>
+      <p id="total-selecionado">Nenhum dado selecionado</p>
+      <button id="btn-limpar" class="secundario">Limpar seleção</button>
+    </aside>
+
+    <!-- Centro: caixa onde os dados caem -->
+    <section id="centro">
+      <div id="caixa"></div>
+      <button id="btn-rolar">Rolar dados!</button>
+      <p id="mensagem"></p>
+
+      <div id="resultado" hidden>
+        <h2>Resultado (ordem crescente)</h2>
+        <div id="lista-resultado"></div>
+        <p id="soma"></p>
+      </div>
+    </section>
+
+    <!-- Histórico salvo no localStorage -->
+    <aside id="historico-painel">
+      <h2>Últimas rolagens</h2>
+      <ul id="historico"></ul>
+      <button id="btn-limpar-historico" class="secundario">Apagar histórico</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
